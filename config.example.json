@@ -1,0 +1,15 @@
+{
+  "root_folder_id": "ID_DA_PASTA_RAIZ",
+  "spreadsheet_id": "ID_DA_PLANILHA",
+  "sheet_title": "Documentos",
+  "categories": {
+    "Consulta": "ID_DA_SUBPASTA_CONSULTA",
+    "Exame": "ID_DA_SUBPASTA_EXAME",
+    "Terapia": "ID_DA_SUBPASTA_TERAPIA"
+  },
+  "rules": [
+    {"pattern": "consulta", "category": "Consulta"},
+    {"pattern": "exame", "category": "Exame"},
+    {"pattern": "terapia|fisioterapia", "category": "Terapia"}
+  ]
+}

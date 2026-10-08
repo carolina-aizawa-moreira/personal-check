@@ -1,0 +1,15 @@
+[project]
+name = "personal-check"
+version = "0.1.0"
+description = "Organização revisável de documentos de reembolso no Google Drive"
+requires-python = ">=3.11"
+dependencies = ["google-api-python-client>=2.0,<3", "google-auth-oauthlib>=1.2,<2", "Pillow>=11,<13", "pypdf>=5,<7"]
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+[project.scripts]
+reembolso = "reembolso.cli:main"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["reembolso*"]
